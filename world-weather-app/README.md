@@ -26,7 +26,7 @@ Open terminal(if mac) or cmd(if windows) on the root directory/folder of the pro
 
 run the command "npm install"- This will installs the react packages for this code base
 
-Once the packages are installed, run npm build to generate an optimized production buld.
+Once the packages are installed, run npm build to generate an optimized production build.
 
 Run the below command to start up the application on local hosted Nodejs server -
 npm start
