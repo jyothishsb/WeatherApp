@@ -1,3 +1,12 @@
+************************** World Weather App.********************************
+
+On Launching the app will show weather for Seattle and Minneapolis.
+Users can add up to 5 cities by providing the country name and city name.
+Users can delete cities which are no longer needed.
+Weather info of added cities will refresh every 15 minutes.
+
+
+
 This project was bootstrapped with Create React App.
 
 Steps to run locally:

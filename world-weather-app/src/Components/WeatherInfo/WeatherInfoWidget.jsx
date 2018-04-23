@@ -3,7 +3,6 @@ import './WeatherInfoWidget.css'
 
 var WeatherInfoWidget = (props) => {
   var cityWeatherInfoList = Array.from(props.cityWeatherList).map((cityInfo, index) => {
-    console.log(cityInfo)
     if (cityInfo.error) {
       return null;
     } else if (cityInfo.isLoading) {

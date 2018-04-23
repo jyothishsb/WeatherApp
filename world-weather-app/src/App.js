@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { deleteCityWeather} from "./actions/index";
+import { deleteCityWeather, getCityWeather} from "./actions/index";
 import './App.css';
 import AppHeader from './Components/AppHeader/appHeader';
 import WeatherInfoWidget from './Components/WeatherInfo/WeatherInfoWidget'
@@ -11,13 +11,20 @@ class App extends Component {
     super(props);
     this.store = this.props.store;    
   }
+  componentDidMount() {
+    var cityWeatherList = this.store.getState().cityWeatherList;
+    window.setInterval(() => {
+      for (var city of cityWeatherList) {
+        if (!city.isLoading) {
+          this.store.dispatch(getCityWeather(city.name, city.country));
+        }
+      }
+    }, 900000);
+  }
   handleDeleteCity = (city, event)=>{
     this.store.dispatch(deleteCityWeather(city.name, city.country));
  }
 render() {
-    console.log(` APP render counter ${renderCounter}`);
-    console.log(this.store.getState().cityWeatherList);
-    renderCounter++;
     return (
       <div className="appUI">
         <AppHeader error={this.store.getState().addCityError} message={this.store.getState().addCityMessage} /> 
