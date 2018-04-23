@@ -1,0 +1,34 @@
+.AppHeaderCSS {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+  text-transform: uppercase;
+  z-index: 100;
+  height:50px;
+}
+.MessageHeader{
+  position: fixed;
+  top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  border-top: black;
+  background-color: lightgoldenrodyellow;
+}
+.error{
+  color: red;
+}

@@ -1,0 +1,66 @@
+.addCity{
+    position: fixed;
+    top:100px;
+    width: 100%;
+    padding-left:20px;
+    font-size: 24px;
+}
+
+input[type="text"]
+ {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: white;
+}
+
+input[type="text"]:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#country{
+    margin-right: 1px;
+    width:200px;
+    font-size: 24px;
+    color:white;
+}
+#city{
+    width:200px;
+    margin-left: 10px;
+    font-size: 24px;
+    color:white;
+}
+
+#clearCountry   #clearCity {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color:black
+
+    }
+.clearIcon{
+    border-radius: 45%;  
+    border: none;
+    background: transparent;
+
+}
+.addCityButton{
+    padding-left: 20px;
+    font-size: 40px;
+    color: green;   
+    background-color: white;
+    border-radius: 5%;
+    align-content: center;  
+    vertical-align: -webkit-baseline-middle;
+    border:none;
+    background: transparent;
+
+}
